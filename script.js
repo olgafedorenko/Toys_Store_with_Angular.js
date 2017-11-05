@@ -35,7 +35,7 @@ app.filter('searchFor', function(){
 
 
 app.controller('EventSearchController', function($scope, $http){
-	    var url = "hw5.txt";
+	    var url = "toys_data.txt";
 		$http.get(url).then( function(response) {
 		   $scope.items = response.data;
 		});
